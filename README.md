@@ -10,7 +10,7 @@ var properties = { foo: 'bar' };
 
 var myCircle = new Circle(center, radius, {
     units: units,
-    zoom: mapzoom,
+    zoom: 12,
     properties: properties
 });
 
@@ -27,12 +27,15 @@ myCircle.updateRadius(100);
 
 ```
 
-### Buildings
+### Building
 
 `npm install`
-`num run build`
 
-Use the distributed library in your app at `dist/geojson-circle.js`
+If using in your app, include the following library in your code:
+`dist/geojson-circle.js`
+
+If building a new version from source:
+`num run build`
 
 ### Example
 
